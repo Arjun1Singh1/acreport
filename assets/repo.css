@@ -1,0 +1,100 @@
+html {
+    font-size: 62.5%;}
+  
+  body {
+      font-size: 1.5em;
+      line-height: 1.6;
+      font-weight: 400;
+      font-family: 'HelveticaNeue', sans-serif,'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+      color: rgb(50, 50, 50);  }
+
+/* @media only screen and (min-device-width: 1080px) { */
+  .repo{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 0.5fr 3fr 3fr 3fr 3fr 1fr 1fr 2fr;
+        gap: 0.7rem;
+        grid-template-areas:
+        "Header  Header" 
+        "Dropdown1  Dropdown2"
+        "ac_part intro"
+        "ls_part intro"
+        "ae_summ  ae_summ"
+        "ls_summ  ls_summ"
+        "poten bar"
+        "pie  bar"
+        "issue issue";
+        }
+      /* } */
+
+.Header{
+  grid-area: Header;
+}
+.Dropdown1{
+  grid-area: Dropdown1;
+}
+.Dropdown2{
+  grid-area: Dropdown2;
+}
+.ac_part{
+  grid-area: ac_part;
+}
+.ls_part{
+  grid-area: ls_part;
+}
+.intro{
+  grid-area: intro;
+}
+.ae_summ{
+  grid-area: ae_summ;
+}
+.ls_summ{
+  grid-area: ls_summ;
+}
+.poten{
+  grid-area: poten;
+}
+.pie{
+  grid-area: pie;
+  /* height:40vh; */
+}
+.bar{
+  grid-area: bar;
+  /* height:40vh; */
+}
+.issue{
+  grid-area: issue;
+}
+.Tab{
+  grid-area: Tab;
+}
+.down{
+  grid-area:down;
+}
+
+
+@media only screen and (max-width: 1200px) {
+/*@media only screen and (min-device-width: 360px)and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {  */ /*for iphone*/
+  .repo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "Header " 
+    "Dropdown1" 
+    "Dropdown2"
+    "intro"
+    "ac_part"
+    "ls_part"
+    "ae_summ"
+    "ls_summ"
+    "pie"
+    "poten"
+    "bar"
+    "issue";
+    }
+    .Header{
+      font-size: 1.2em;
+    }
+} 
